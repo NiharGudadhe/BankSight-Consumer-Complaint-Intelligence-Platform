@@ -1,0 +1,11 @@
+column,max_abs_diff,months_off
+complaints,0.0,0
+eligible_complaints,0.0,0
+relief_cases,0.0,0
+monetary_relief_cases,0.0,0
+untimely_cases,0.0,0
+relief_rate,0.0,0
+monetary_share_of_relief,0.0,0
+untimely_rate,0.0,0
+relief_rate_3m,0.0,0
+relief_rate_change_vs_prev_month,0.0,0

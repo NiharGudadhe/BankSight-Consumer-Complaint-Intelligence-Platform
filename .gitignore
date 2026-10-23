@@ -1,0 +1,69 @@
+# ---------- Secrets ----------
+secrets/
+.env
+.env.*
+*.p8
+*.pem
+*.key
+*.pub
+.streamlit/secrets.toml
+aws_credentials*
+*credentials*.csv
+
+# ---------- Python ----------
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+build/
+dist/
+
+# ---------- Data ----------
+data/
+!data/.gitkeep
+*.parquet
+*.duckdb
+*.duckdb.wal
+*.csv.gz
+*.zip
+
+# ---------- Models ----------
+models/*
+!models/.gitkeep
+*.joblib
+*.pkl
+*.safetensors
+*.bin
+*.pt
+*.onnx
+
+# ---------- Experiment tracking & orchestration ----------
+mlruns/
+mlflow.db
+mlartifacts/
+.prefect/
+prefect.db
+
+# ---------- dbt ----------
+dbt_banksight/target/
+dbt_banksight/dbt_packages/
+dbt_banksight/logs/
+logs/
+dbt.log
+
+# ---------- Setup leftovers ----------
+*.bak
+*.proposed
+*.tmp
+Untitled*.ipynb
+
+# ---------- OS / editor ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

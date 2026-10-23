@@ -1,0 +1,2 @@
+gain,ci_low,ci_high,verdict
+0.024864716019396715,0.015613738687716608,0.03344581007973109,CONFIRMED: RoBERTa beats B4 on the sealed test.

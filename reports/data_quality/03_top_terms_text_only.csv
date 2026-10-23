@@ -1,0 +1,51 @@
+term,coef,direction
+transunion,9.810571898541012,relief
+citi,5.153747479866844,relief
+comenity,4.988807444726143,relief
+credence,4.9248295133664834,relief
+citibank,4.428473938485474,relief
+venmo,4.033254832746294,relief
+midland,3.923174005681421,relief
+credence resource,3.5089276120653,relief
+resource,3.335623826467734,relief
+td,3.1567838440241167,relief
+credit,3.143617174007007,relief
+resource management,2.8440926475082517,relief
+accounts,2.8324189673735534,relief
+late,2.7969440193361437,relief
+of america,2.795824012558157,relief
+comenity bank,2.691304200802714,relief
+portfolio recovery,2.663665720445678,relief
+card,2.634067498216245,relief
+boa,2.6328465309547093,relief
+bank of,2.619270111652049,relief
+huntington,2.6165003267857605,relief
+us bank,2.572748215348862,relief
+direct express,2.5679500772678483,relief
+amex,2.5470586204839303,relief
+trans union,2.5206327393986085,relief
+experian,-6.8783410415713,explanation
+cash app,-5.3086799265655955,explanation
+loan,-4.936800786985018,explanation
+mortgage,-4.917994222155682,explanation
+zelle,-4.770492085715547,explanation
+cashapp,-4.507072883774533,explanation
+app,-4.201077085585202,explanation
+nelnet,-3.6031217420178105,explanation
+affirm,-3.600591502633911,explanation
+inc,-3.3235927131478737,explanation
+loans,-2.9949905938471924,explanation
+cash,-2.9802293535544355,explanation
+robinhood,-2.942166628874521,explanation
+was,-2.9318627561654935,explanation
+finance,-2.8227971327814627,explanation
+jefferson,-2.694617323914136,explanation
+systems,-2.6919953385016195,explanation
+vanilla,-2.635696592705793,explanation
+barclays,-2.481266315926467,explanation
+jefferson capital,-2.447783644238821,explanation
+financial,-2.342058741783662,explanation
+funds,-2.3052223304361195,explanation
+money,-2.2678032745268695,explanation
+netspend,-2.124398145058126,explanation
+foreclosure,-2.1182805367962088,explanation

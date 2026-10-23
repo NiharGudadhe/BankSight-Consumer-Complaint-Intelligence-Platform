@@ -1,0 +1,11 @@
+comparison,metric,diff,ci_low,ci_high,ci_excludes_0
+XGBoost  minus  LightGBM,pr_auc,0.0039078031612029265,0.00031097285421056585,0.007679685764749916,True
+XGBoost  minus  LightGBM,roc_auc,0.0006402500562764069,-0.00024120668390461563,0.0015785418111497417,False
+LightGBM  minus  B4 text+product+issue (tuned),pr_auc,-0.01085360465964405,-0.015579367889036248,-0.005820285521056894,True
+LightGBM  minus  B4 text+product+issue (tuned),roc_auc,-0.005183128862933697,-0.007157801894722105,-0.0034252175773011348,True
+XGBoost  minus  B4 text+product+issue (tuned),pr_auc,-0.006945801498441126,-0.01201611806614101,-0.0025391083634085324,True
+XGBoost  minus  B4 text+product+issue (tuned),roc_auc,-0.00454287880665729,-0.0064430417847926354,-0.0030661167388354982,True
+"B3 text only (tuned)  minus  B3m text only, companies masked",pr_auc,0.03348403014307833,0.027619447566595904,0.040077620584332986,True
+"B3 text only (tuned)  minus  B3m text only, companies masked",roc_auc,0.026445770001084414,0.023677818447305425,0.029333907325971735,True
+"B3m text only, companies masked  minus  B1 product rate",pr_auc,0.04294653494972808,0.0325644993119492,0.053645826024062246,True
+"B3m text only, companies masked  minus  B1 product rate",roc_auc,0.02614632917097865,0.018198303674861728,0.033206188068469436,True

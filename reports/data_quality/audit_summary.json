@@ -1,0 +1,34 @@
+{
+  "rows": 150000,
+  "unique_complaint_ids": 150000,
+  "date_min": "2023-01-01",
+  "date_max": "2026-07-29",
+  "product_groups": {
+    "Credit reporting": 25000,
+    "Debt collection": 25000,
+    "Credit or prepaid card": 25000,
+    "Bank account": 25000,
+    "Money transfer / virtual currency": 20378,
+    "Mortgage": 10160,
+    "Vehicle loan or lease": 7106,
+    "Student loan": 6392,
+    "Payday / personal loan": 4745,
+    "Debt or credit management": 1219
+  },
+  "company_response_counts": {
+    "Closed with explanation": 115094,
+    "Closed with non-monetary relief": 24728,
+    "Closed with monetary relief": 8944,
+    "Untimely response": 1213,
+    "In progress": 20,
+    "NaN": 1
+  },
+  "target_eligible_rows": 148767,
+  "relief_rate_pct": 22.63,
+  "narrative_median_chars": 741,
+  "pct_with_xxxx": 69.4,
+  "proposed_split": {
+    "validation_starts": "2025-07-01",
+    "test_starts": "2025-11-01"
+  }
+}

@@ -1,0 +1,9 @@
+window,measure,reference,current,change,warn_at,alert_at,status,meaning,details,n_complaints
+2026-01,topic_psi,,,0.2907048889878771,0.1,0.25,alert,complaint themes are shifting,T2: general bank/card/money stories 48% -> 66% (+18 points); T5: credit report errors and identity theft 30% -> 15% (-16 points); T8: debt collection validation 13% -> 16% (+3 points),3477
+2026-01,product_psi,,,1.0096351148788614,0.1,0.25,alert,the product mix is shifting,Credit reporting 22% -> 0% (-21 points); Bank account 15% -> 21% (+6 points); Credit or prepaid card 16% -> 21% (+5 points),3477
+2026-01,score_psi,,,0.2708296166729829,0.1,0.25,alert,the model's scores are shifting,,3477
+2026-01,flag_share,0.46,0.2833333333333333,-0.1766666666666667,0.05,0.1,alert,share of complaints flagged review_first has moved,,3477
+2026-01,repeated_share,0.15784075573549258,0.02185792349726776,-0.13598283223822483,0.05,0.1,alert,the share of complaints using KNOWN template wording has moved,,3477
+2026-01,new_campaign_share,0.0,0.010641357492090883,0.010641357492090883,0.05,0.1,ok,NEW template wording (a new campaign) is appearing,,3477
+2026-01,median_words,147.0,174.0,0.18367346938775508,0.15,0.3,warn,complaints are getting longer or shorter,,3477
+2026-01,relief_rate,0.22774628879892037,0.16019557089444925,-0.06755071790447112,0.03,0.06,alert,the real relief rate has moved (outcomes arrive late; for reporting only),,3477

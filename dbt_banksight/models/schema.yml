@@ -1,0 +1,36 @@
+version: 2
+
+# Data tests: dbt runs these checks every time we run "dbt test". A failing test means the data or the SQL is wrong.
+models:
+  - name: stg_complaints
+    columns:
+      - name: complaint_id
+        data_tests: [unique, not_null]
+      - name: product_group
+        data_tests: [not_null]
+
+  - name: int_complaints_labeled
+    columns:
+      - name: complaint_id
+        data_tests: [unique, not_null]
+      - name: split
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['train', 'validation', 'test']
+      - name: product_group
+        data_tests:
+          - relationships:      # every product group must exist in our mapping table
+              arguments:
+                to: ref('product_group_map')
+                field: product_group
+
+  - name: mart_monthly_kpis
+    columns:
+      - name: month
+        data_tests: [unique, not_null]
+
+  - name: mart_product_kpis
+    columns:
+      - name: product_group
+        data_tests: [unique, not_null]

@@ -1,0 +1,10 @@
+data/
+notebooks/
+reports/
+dbt_banksight/
+mlruns/
+mlartifacts/
+mlflow.db
+.git/
+venv/
+**/__pycache__/

@@ -1,0 +1,41 @@
+# KPI dictionary: ONE agreed definition for every number shown on the dashboard.
+# If two people calculate "relief rate" differently, the dashboard is worthless, so we write it down once.
+
+relief_rate:
+  meaning: Share of complaints that ended with some form of relief for the consumer
+  formula: relief_cases / eligible_complaints
+  relief_cases: complaints closed with monetary relief or non-monetary relief
+  eligible_complaints: complaints with a final outcome (excludes "Untimely response" and "In progress")
+  grain: month, product group, issue
+  source_model: mart_monthly_kpis, mart_product_kpis, mart_issue_kpis
+  caveat: A falling rate can mean the company mix changed, not that companies became stricter
+
+relief_rate_3m:
+  meaning: Relief rate over the latest three months combined (smooths noise)
+  formula: sum of relief_cases over 3 months / sum of eligible_complaints over 3 months
+  grain: month
+  source_model: mart_monthly_kpis
+
+monetary_share_of_relief:
+  meaning: Of the complaints that got relief, how many got money back
+  formula: monetary_relief_cases / relief_cases
+  grain: month, product group
+  source_model: mart_monthly_kpis, mart_product_kpis
+
+untimely_rate:
+  meaning: Share of complaints where the company missed the response deadline
+  formula: complaints with timely_response = 'No' / all complaints
+  grain: month, product group
+  source_model: mart_monthly_kpis, mart_product_kpis
+  caveat: Not the same as the "Untimely response" outcome label used to exclude rows from the model target
+
+complaints:
+  meaning: Number of complaints received
+  formula: count of complaint_id
+  grain: month, product group, issue
+
+relief_rate_change_vs_prev_month:
+  meaning: Month-over-month change in relief rate, in percentage points as a fraction (0.01 = 1 point)
+  formula: relief_rate this month - relief_rate previous month
+  grain: month
+  source_model: mart_monthly_kpis

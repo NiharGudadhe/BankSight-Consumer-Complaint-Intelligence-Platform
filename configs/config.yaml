@@ -1,0 +1,32 @@
+# BankSight frozen decisions: written by notebook
+# They were set BEFORE any model was trained. Do not change them.
+project: banksight
+seed: 42
+
+data:
+  sample_parquet: data/processed/cfpb_sample.parquet
+  warehouse: data/warehouse/banksight.duckdb
+  labels_table: features.complaint_labels
+  labels_parquet: data/features/complaint_labels.parquet
+  last_complaint_date: 2026-07-29
+
+split:
+  type: time                      # never a random split
+  validation_start: 2025-07-01   # train < validation_start
+  test_start: 2025-11-01        # validation < test_start <= test
+
+target:
+  name: got_relief
+  positive: ['Closed with monetary relief', 'Closed with non-monetary relief']
+  negative: ['Closed with explanation']
+  excluded: ['Untimely response', 'In progress', '<missing>']
+  secondary_target: got_monetary_relief
+
+features:
+  allowed_at_prediction_time: [narrative, product_group, issue]
+  excluded_from_model_kept_for_audit: [tags, state]
+  not_useful: [narrative_length, xxxx_count]
+  to_test: [sub_product, sub_issue]
+  
+evaluation:
+  baselines: [relief_rate_by_product, logistic_product_plus_issue, tfidf_logistic_text_product_issue]

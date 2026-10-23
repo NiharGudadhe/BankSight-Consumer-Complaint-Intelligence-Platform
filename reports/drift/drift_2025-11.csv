@@ -1,0 +1,9 @@
+window,measure,reference,current,change,warn_at,alert_at,status,meaning,details,n_complaints
+2025-11,topic_psi,,,0.06401231830738704,0.1,0.25,ok,complaint themes are shifting,T2: general bank/card/money stories 48% -> 54% (+6 points); T5: credit report errors and identity theft 30% -> 27% (-3 points); T1: Zelle complaints 1% -> 0% (-1 points),4176
+2025-11,product_psi,,,0.01826843878433031,0.1,0.25,ok,the product mix is shifting,Debt collection 20% -> 17% (-3 points); Bank account 15% -> 18% (+3 points); Credit reporting 22% -> 19% (-3 points),4176
+2025-11,score_psi,,,0.04706183227168186,0.1,0.25,ok,the model's scores are shifting,,4176
+2025-11,flag_share,0.46,0.4666666666666667,0.006666666666666654,0.05,0.1,ok,share of complaints flagged review_first has moved,,4176
+2025-11,repeated_share,0.15784075573549258,0.07974137931034483,-0.07809937642514775,0.05,0.1,warn,the share of complaints using KNOWN template wording has moved,,4176
+2025-11,new_campaign_share,0.0,0.007662835249042145,0.007662835249042145,0.05,0.1,ok,NEW template wording (a new campaign) is appearing,,4176
+2025-11,median_words,147.0,157.0,0.06802721088435382,0.15,0.3,ok,complaints are getting longer or shorter,,4176
+2025-11,relief_rate,0.22774628879892037,0.2210249042145594,-0.006721384584360973,0.03,0.06,ok,the real relief rate has moved (outcomes arrive late; for reporting only),,4176

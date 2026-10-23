@@ -1,0 +1,12 @@
+version: 2
+
+# "Sources" are the tables that already exist in the database (we did not build them with dbt).
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: cfpb_complaints          # the CFPB complaint sample loaded by notebook 01
+  - name: features
+    schema: features
+    tables:
+      - name: complaint_labels         # target and time split written by notebook 01b

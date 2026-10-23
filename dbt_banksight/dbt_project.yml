@@ -1,0 +1,13 @@
+name: banksight_dbt
+version: "1.0.0"
+config-version: 2
+profile: banksight          # must match the name at the top of profiles.yml
+
+models:
+  banksight_dbt:
+    staging:
+      +materialized: view   # cheap: just a clean "view" of the raw table
+    intermediate:
+      +materialized: view
+    marts:
+      +materialized: table  # final tables the dashboard reads

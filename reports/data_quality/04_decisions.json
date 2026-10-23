@@ -1,0 +1,29 @@
+{
+  "champion": "B4 text+product+issue (tuned)",
+  "champion_rule": "XGBoost vs logistic B4: -0.0069 PR-AUC (95% CI -0.0120 to -0.0025); interval includes 0 or favours B4, so the simpler logistic model is the champion.",
+  "best_boosted": "XGBoost",
+  "text_C": 1.0,
+  "calibration": "isotonic",
+  "cost_fp": 1.0,
+  "benefit_tp": 3.0,
+  "threshold": 0.25,
+  "company_mask_share_of_text_lift_retained": 0.5575088445665262,
+  "lightgbm_params": {
+    "num_leaves": 31,
+    "learning_rate": 0.1,
+    "min_child_samples": 300,
+    "subsample": 0.7,
+    "colsample_bytree": 0.7,
+    "reg_lambda": 1.0,
+    "n_estimators": 12
+  },
+  "xgboost_params": {
+    "max_depth": 3,
+    "learning_rate": 0.1,
+    "min_child_weight": 5.0,
+    "subsample": 0.85,
+    "colsample_bytree": 1.0,
+    "reg_lambda": 5.0,
+    "n_estimators": 61
+  }
+}

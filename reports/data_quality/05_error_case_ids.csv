@@ -1,0 +1,17 @@
+complaint_id,kind,product_group,issue,p_raw,got_relief
+15574809,false_positive,Credit reporting,Improper use of your report,0.9260316828157918,0
+15435492,false_positive,Credit reporting,Improper use of your report,0.8598817420951109,0
+16158436,false_positive,Credit reporting,Improper use of your report,0.8489945490450974,0
+15158643,false_positive,Credit reporting,Incorrect information on your report,0.8460912622929126,0
+16264877,false_positive,Credit reporting,Improper use of your report,0.8405153622191651,0
+16256928,false_positive,Credit reporting,Incorrect information on your report,0.839064232297274,0
+14783908,false_positive,Credit reporting,Improper use of your report,0.8376552543191512,0
+14777522,false_positive,Credit reporting,Incorrect information on your report,0.8351172298255125,0
+14988366,false_negative,Bank account,Problem caused by your funds being low,0.007551744709060764,1
+16347185,false_negative,Mortgage,Struggling to pay mortgage,0.011156339009649246,1
+15249546,false_negative,Student loan,Struggling to repay your loan,0.01837971622257796,1
+14484420,false_negative,Payday / personal loan,Charged fees or interest you didn't expect,0.01933065510555796,1
+15546686,false_negative,Vehicle loan or lease,Repossession,0.019591551574488955,1
+15412164,false_negative,Mortgage,Struggling to pay mortgage,0.02046832793905508,1
+15149658,false_negative,Mortgage,Struggling to pay mortgage,0.022216320968435135,1
+14671946,false_negative,Mortgage,Applying for a mortgage or refinancing an existing mortgage,0.025087094096463595,1

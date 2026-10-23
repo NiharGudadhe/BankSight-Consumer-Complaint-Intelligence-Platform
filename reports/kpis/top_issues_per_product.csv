@@ -1,0 +1,31 @@
+product_group,issue,complaints,eligible_complaints,relief_cases,relief_rate,rank_in_product
+Bank account,Managing an account,10363,10355.0,1932.0,0.1866,1
+Bank account,Closing an account,2733,2733.0,510.0,0.1866,2
+Bank account,Problem caused by your funds being low,2544,2543.0,334.0,0.1313,3
+Credit or prepaid card,Problem with a purchase shown on your statement,4305,4303.0,1542.0,0.3584,1
+Credit or prepaid card,Getting a credit card,2088,2085.0,723.0,0.3468,2
+Credit or prepaid card,"Other features, terms, or problems",2052,2051.0,559.0,0.2725,3
+Credit reporting,Incorrect information on your report,11244,11238.0,5494.0,0.4889,1
+Credit reporting,Improper use of your report,6835,6831.0,3197.0,0.468,2
+Credit reporting,Problem with a company's investigation into an existing problem,4300,4299.0,2080.0,0.4838,3
+Debt collection,Attempts to collect debt not owed,9033,8991.0,2265.0,0.2519,1
+Debt collection,Written notification about debt,4995,4980.0,1654.0,0.3321,2
+Debt collection,False statements or representation,2229,2211.0,418.0,0.1891,3
+Debt or credit management,Didn't provide services promised,254,238.0,19.0,0.0798,1
+Debt or credit management,Confusing or missing disclosures,164,162.0,25.0,0.1543,2
+Debt or credit management,Charged upfront or unexpected fees,153,150.0,18.0,0.12,3
+Money transfer / virtual currency,Other transaction problem,10541,10535.0,189.0,0.0179,1
+Money transfer / virtual currency,Fraud or scam,2735,2734.0,248.0,0.0907,2
+Money transfer / virtual currency,Unauthorized transactions or other transaction problem,1095,1094.0,137.0,0.1252,3
+Mortgage,Trouble during payment process,4334,4326.0,209.0,0.0483,1
+Mortgage,Struggling to pay mortgage,1826,1821.0,47.0,0.0258,2
+Mortgage,Applying for a mortgage or refinancing an existing mortgage,826,819.0,45.0,0.0549,3
+Payday / personal loan,Charged fees or interest you didn't expect,894,879.0,73.0,0.083,1
+Payday / personal loan,Problem when making payments,448,446.0,39.0,0.0874,2
+Payday / personal loan,Struggling to pay your loan,375,371.0,27.0,0.0728,3
+Student loan,Dealing with your lender or servicer,3624,3421.0,177.0,0.0517,1
+Student loan,Struggling to repay your loan,927,866.0,24.0,0.0277,2
+Student loan,Incorrect information on your report,244,228.0,7.0,0.0307,3
+Vehicle loan or lease,Managing the loan or lease,1710,1700.0,155.0,0.0912,1
+Vehicle loan or lease,Repossession,1111,1104.0,74.0,0.067,2
+Vehicle loan or lease,Getting a loan or lease,799,795.0,41.0,0.0516,3

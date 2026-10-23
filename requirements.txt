@@ -1,0 +1,15 @@
+duckdb
+pandas
+pyarrow
+scikit-learn
+lightgbm
+xgboost
+shap
+mlflow
+matplotlib
+seaborn
+scipy
+statsmodels
+pyyaml
+ipykernel
+spacy

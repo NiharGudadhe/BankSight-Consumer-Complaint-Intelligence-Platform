@@ -1,0 +1,19 @@
+banksight:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: ../data/warehouse/banksight.duckdb
+      schema: analytics
+      threads: 1
+
+    snowflake:
+      type: snowflake
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+      user: "{{ env_var('SNOWFLAKE_USER') }}"
+      private_key_path: "{{ env_var('SNOWFLAKE_PRIVATE_KEY_PATH') }}"
+      role: banksight_role
+      database: BANKSIGHT
+      warehouse: banksight_wh
+      schema: ANALYTICS
+      threads: 4

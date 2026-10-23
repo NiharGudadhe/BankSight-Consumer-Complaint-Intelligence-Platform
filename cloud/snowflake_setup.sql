@@ -1,0 +1,37 @@
+
+
+USE ROLE ACCOUNTADMIN;
+
+-- 1) Cost cap: stop everything at 5 credits per month
+CREATE OR REPLACE RESOURCE MONITOR banksight_monitor
+  WITH CREDIT_QUOTA = 5
+  TRIGGERS ON 80 PERCENT DO NOTIFY
+           ON 100 PERCENT DO SUSPEND;
+
+-- 2) Smallest warehouse, sleeps after 60 seconds idle
+CREATE WAREHOUSE IF NOT EXISTS banksight_wh
+  WAREHOUSE_SIZE = XSMALL
+  AUTO_SUSPEND = 60
+  AUTO_RESUME = TRUE
+  INITIALLY_SUSPENDED = TRUE
+  RESOURCE_MONITOR = banksight_monitor;
+
+-- 3) Database and the same three schemas we use in DuckDB
+CREATE DATABASE IF NOT EXISTS BANKSIGHT;
+CREATE SCHEMA IF NOT EXISTS BANKSIGHT.RAW;
+CREATE SCHEMA IF NOT EXISTS BANKSIGHT.FEATURES;
+CREATE SCHEMA IF NOT EXISTS BANKSIGHT.ANALYTICS;
+
+-- 4) A role + a service user for scripts (key-pair login only, no password)
+CREATE ROLE IF NOT EXISTS banksight_role;
+GRANT USAGE, OPERATE ON WAREHOUSE banksight_wh TO ROLE banksight_role;
+GRANT ALL ON DATABASE BANKSIGHT TO ROLE banksight_role;
+GRANT ALL ON ALL SCHEMAS IN DATABASE BANKSIGHT TO ROLE banksight_role;
+GRANT ALL ON FUTURE TABLES IN DATABASE BANKSIGHT TO ROLE banksight_role;
+GRANT ALL ON FUTURE VIEWS  IN DATABASE BANKSIGHT TO ROLE banksight_role;
+
+CREATE USER IF NOT EXISTS banksight_svc
+  TYPE = SERVICE
+  DEFAULT_ROLE = banksight_role
+  DEFAULT_WAREHOUSE = banksight_wh;
+GRANT ROLE banksight_role TO USER banksight_svc;

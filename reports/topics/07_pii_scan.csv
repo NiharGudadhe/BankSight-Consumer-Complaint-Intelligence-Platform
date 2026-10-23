@@ -1,0 +1,6 @@
+pattern,narratives_with_match,share
+email,9,7.358111091126119e-05
+phone,2,1.6351357980280262e-05
+ssn_like,0,0.0
+long_digit_string,4,3.2702715960560525e-05
+web_link,0,0.0

@@ -2,8 +2,8 @@
 
 Predicts which US bank complaints are likely to get **relief** from the company, so a review team can read the right ones first.
 
-**Author:** [[NIHAR GUDADHE]] · [LinkedIn]([[FILL]]) · [GitHub]([[FILL]])
-**Live dashboard:** [[FILL: Streamlit link after deployment]]
+- **Author:** NIHAR GUDADHE · [LinkedIn]([[FILL]])
+- **Live dashboard:**  https://banksight-consumer-complaint-intelligence-platform-moyi7xojmmp.streamlit.app/
 
 ---
 
